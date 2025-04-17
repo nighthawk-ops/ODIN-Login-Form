@@ -1,3 +1,13 @@
+/* Variables */
+@font-face {
+    font-family: my-cool-font;
+    src: url(./fonts/Macondo-Regular.ttf);
+  }
+  
+  * {
+    font-family: my-cool-font, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
 /* Custom styles */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -32,7 +42,21 @@ img, picture, video, canvas, svg {
 /* 7. Inherit fonts for form controls */
 input, button, textarea, select {
     font: inherit;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+input,
+textarea,
+select{
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
   
 /* 8. Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
@@ -53,3 +77,119 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+
+/* Basic Sturcture */
+body{
+    display:flex;
+    background-image: url("./images/kristijan-arsov-tcw3nwoAgvs-unsplash.jpg");
+    background-size: contain;
+    height: 100vh;
+}
+
+.header-text h1{
+    margin-bottom: 5px;
+}
+
+.sidebar{
+   flex-grow: 1; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.sidebar-icon{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.sidebar-icon img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.sidebar h1{
+    color: white;
+    font-size: 50px;
+}
+
+main{
+    flex-grow: 2;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text{
+    margin-bottom: 10px;
+    padding: 20px;
+    
+}
+.form-content{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 1px 10px 1px #b8b8b8;
+}
+
+.form-content legend{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.widget{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.form-row{
+    display: flex;
+    gap: 40px;
+}
+
+.widget label{
+    font-size: 12px;
+}
+
+.widget input{
+    border: #E5E7EB solid 1px;
+    border-radius: 5px;
+}
+
+.widget input:focus{
+    outline: none;
+    border-color: lightblue;
+    box-shadow: 0 1px 2px 1px #b8b8b8;
+
+}
+
+.widget input:invalid{
+    border-color: red;
+}
+
+.form-bottom{
+    padding: 20px;
+}
+
+.form-bottom button{
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 2px #b8b8b8;
+
+}
+
+.form-bottom p{
+    margin-top: 5px;
+}
+
+.form-bottom a{
+    color: #596D48;
+    text-decoration: none;
+}
+

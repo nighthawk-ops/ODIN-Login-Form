@@ -9,49 +9,76 @@
 <body>
     <!-- Side bar -->
     <div class="sidebar">
-        <div>
+        <div class="sidebar-icon">
             <img src="./images/odin-lined.png" alt="ODIN">
+            <span><h1>ODIN</h1></span>
         </div>
     </div>
 
-    <h1>JOIN RAGNAROK</h1>
-    <p>Asguard invites you to join RAGNAROK, <br>
-    Make a name for yourself and fight along side a god
-    </p>
-
-    <p>You know you want to!</p>
-
-    <form action="post">
-        <legend>Let's do this</legend>
-
-        <div class="form-row">
-            <label for="firstname">FIRSTNAME</label>
-            <input type="text" name="firstname" id="firstname">
-
-            <label for="lastname">LASTNAME</label>
-            <input type="text" name="lastname" id="lastname">
+    <main>
+        <div class="header-text">
+            <h1>JOIN RAGNAROK</h1>
+            <p>Asguard invites you to join RAGNAROK, <br>
+            Make a name for yourself and fight along side a god <br>
+            You know you want to.
+            </p>
         </div>
 
-        <div class="form-row">
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
+        <form action="post">
 
-            <label for="phonenumber">PHONE NUMBER</label>
-            <input type="tel" name="phonenumber" id="phonenumber">
-        </div>
+            <div class="form-content">
+                <legend>Let's do this</legend>
 
-        <div class="form-row">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
+                <div class="form-row">
 
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" name="confirmPassword" id="confirmPassword">
-        </div>
+                    <div class="widget">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
 
-        <button type="submit">SUBMIT</button>
+                    <div class="widget">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname"> 
+                    </div>
+                    
+                </div>
+    
+                <div class="form-row">
 
-        <p>Already have an account? <a href="#">Log in</a> </p>
+                    <div class="widget">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-    </form>
+                    <div class="widget">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input type="tel" name="phonenumber" id="phonenumber">
+                    </div>
+                    
+                </div>
+    
+                <div class="form-row">
+
+                    <div class="widget">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required> 
+                    </div>
+
+                    <div class="widget">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                   
+                </div>
+            </div>
+           
+            <div class="form-bottom">
+                <button type="submit">Create account</button>
+                <p>Already have an account? <a href="#">Log in</a> </p>
+            </div>
+           
+        </form>
+    </main>
+    
 </body>
 </html>
